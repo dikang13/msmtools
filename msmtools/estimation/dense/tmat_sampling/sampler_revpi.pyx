@@ -88,8 +88,8 @@ cdef class XSampler(object):
     def update_revpi_sparse(self, np.ndarray[DTYPE_t, ndim=2] X ,
                             np.ndarray[DTYPE_t, ndim=2] C,
                             np.ndarray[DTYPE_t, ndim=1] b,
-                            np.ndarray[np.int_t, ndim=1] I,
-                            np.ndarray[np.int_t, ndim=1] J):
+                            np.ndarray[np.int64_t, ndim=1] I,
+                            np.ndarray[np.int64_t, ndim=1] J):
         cdef size_t n, n_idx
         n = C.shape[0]
         n_idx = I.shape[0]
