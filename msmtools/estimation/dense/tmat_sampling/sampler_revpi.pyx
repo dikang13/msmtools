@@ -30,8 +30,8 @@ cimport numpy as np
 from msmtools.estimation.dense.mle.mle_trev_given_pi import mle_trev_given_pi
 from msmtools.analysis import is_connected
 
-DTYPE = np.float
-ctypedef np.float_t DTYPE_t
+DTYPE = float
+ctypedef float_t DTYPE_t
 
 cdef extern from "sample_revpi.h":
 
